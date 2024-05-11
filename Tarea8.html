@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Puntaje de Tiro al Blanco</title>
+<script language="Javascript">
+        function azul()
+        {
+            t1.style.color="blue";
+        }
+        function negro2()
+        {
+            t1.style.color="#000000";
+        }
+</script>
+<script language="Javascript">
+        function amarillo()
+        {
+            t2.style.color="yellow";
+        }
+        function negro()
+        {
+            t2.style.color="#000000";
+        }
+</script>
+
+<script language="javascript">
+        contador  =0;
+        centrado = false;
+        window.moveTo(0,0);
+        window.resizeTo (screen.availWidht, screen.availHeight);
+        function iniciar() 
+        {
+            crecimiento = setInterval(mover,10);
+        }
+        function mover()
+        {
+            contador += 2;
+            if (contador <=140)
+            {
+                menor = 140-contador;
+                mayor = 140+contador;
+                Capa1.style.clip="rect(" +menor+" "+ mayor +" "+ mayor+" "+menor+")";
+            }else{
+                cierre =setTimeout(cerrar,20000);
+                centrado = true;
+                }
+        }
+
+        function cerrar()
+        {
+            Capa1.style.visibility= "hidden";
+            clearInterval (crecimiento);
+            if (centrado) clearTimeout(cierre);
+        }
+</script>
+<script language="javascript">
+        contador  =0;
+        centrado = false;
+        window.moveTo(0,0);
+        window.resizeTo (screen.availWidht, screen.availHeight);
+        function iniciar2() 
+        {
+            crecimiento = setInterval(mover,10);
+        }
+        function mover2()
+        {
+            contador += 2;
+            if (contador <=140)
+            {
+                menor = 140-contador;
+                mayor = 140+contador;
+                Capa2.style.clip="rect(" +menor+" "+ mayor +" "+ mayor+" "+menor+")";
+            }else{
+                cierre =setTimeout(cerrar,20000);
+                centrado = true;
+                }
+        }
+
+        function cerrar2()
+        {
+            Capa2.style.visibility= "hidden";
+            clearInterval (crecimiento);
+            if (centrado) clearTimeout(cierre);
+        }
+</script>
+<script language="javascript">
+            <!-- 
+                contador  =0;
+                centrado = false;
+                window.moveTo(0,0);
+                window.resizeTo (screen.availWidht, screen.availHeight);
+                function iniciar3()
+                {
+                    crecimiento = setInterval(mover,10);
+                }
+                function mover3()
+                {
+                    contador += 2;
+                    if (contador <=140)
+                    {
+                        menor = 140-contador;
+                        mayor = 140+contador;
+                        Capa3.style.clip="rect(" +menor+" "+ mayor +" "+ mayor+" "+menor+")";
+                    }else{
+                        cierre =setTimeout(cerrar,20000);
+                        centrado = true;
+                        }
+                }
+
+                function cerrar3()
+                {
+                    Capa3.style.visibility= "hidden";
+                    clearInterval (crecimiento);
+                    if (centrado) clearTimeout(cierre);
+                }
+            //-->
+        </script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	background-image: url(fond.jpg);
+    }
+    table {
+        margin: auto;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){ 
+            $("#logo").mouseover(function(){
+                $(this).animate({height:'350px'},2000);
+            });
+            $("#logo").mouseout(function(){
+                $(this).animate({height:'170px'});
+            });
+        });
+    </script>
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0" onload="iniciar();">
+    <span id="Capa1" style="position: absolute; left: 940px; top: 141px; width: 600px; height: 280px; background-color: #0FF; 
+    layer-background-color: #12031b; clip: rect(140 140 140 140); visibility: visible; overflow: auto">
+        <p>
+            ¿Sabias que...? También conocido como tiro con arco, 
+            tiene sus raíces en la antigua historia de la humanidad. 
+            Se cree que esta práctica se originó hace miles de años 
+            en diferentes culturas, como los egipcios, persas y chinos.
+        </p>
+        <center>
+            <img src="fondo_o2.jpg"> <br>
+            <button type="button" class="btn btn-dark" onclick="cerrar();">
+                Cerrar Esto
+            </button>
+        </center>
+</span>
+<a href="index.html"><img src="home.png" align="left"></a>
+<br>
+<br>  
+<table width="790" border="5" align="center" cellpadding="10" cellspacing="10" >
+  <tr>
+    <td width="405" height="145">
+	<div class="list-group">
+    <a href="https://es.wikipedia.org/wiki/Tiro_en_los_Juegos_Ol%C3%ADmpicos" class="list-group-item list-group-item-action active" aria-current="true">
+        ¿Qué es el tiro al blanco?
+        </a>
+        <a href="https://www.tvazteca.com/aztecadeportes/mexico-en-tokio-2020/medallistas-mexicanos-tiro-con-arco-juegos-olimpicos-tokio-2020-rcrd" class="list-group-item list-group-item-action">
+            Medallistas mexicanos en tokyo 2020</a>
+        </p>
+    </div>
+    </td>
+    <td width="341">
+     <img align="center" src="R.jpg" alt="logo" id="logo" height="100px"/>
+      Asi se ve el area con los circulos para los tiros y cada ciruclo tiene su puntaje 
+    </td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<h2 id="t2" onmouseover="amarillo();"  onMouseOut="negro();" align="center"> A continuacion puedes simular calcular tu puntaje tomando en referencia 
+	donde haya caido tu tiro</h1>
+<h2 id="t1" onmouseover="azul();"  onMouseOut="negro2();" align="center">Calculadora de Puntaje de Tiro al Blanco</h2>
+<form id="form">
+    <label for="puntajeOriginal">Puntaje Original (0-10): </label>
+    <input type="number" id="puntajeOriginal" name="puntajeOriginal" min="0" max="10" required>
+    <button type="submit" class="btn btn-light">Calcular Puntaje</button>
+</form>
+<div id="resultado"></div>
+
+<script>
+    document.getElementById('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const puntajeOriginal = parseInt(document.getElementById('puntajeOriginal').value);
+        const factor = obtenerFactor(puntajeOriginal);
+        const puntajeFinal = puntajeOriginal * factor;
+        document.getElementById('resultado').innerText = `El puntaje correspondiente es: ${puntajeFinal}`;
+    });
+    function obtenerFactor(puntaje) {
+        switch (puntaje) {
+            case 0:
+            case 1,5:
+            case 6,8:
+            case 9,10:
+                return 0;
+            case 6:
+                return 6;
+            case 8:
+                return 8;
+            default:
+                return 10;
+        }
+    }
+    </script>
+<span id="Capa2" style="position: absolute; left: 69px; top: 376px; width: 700px; height: 280px; background-color: #3FC;
+ layer-background-color: #12031b; clip: rect(140 140 140 140); visibility: visible; overflow: auto">
+        <p>
+            El tiro al blanco es una disciplina que combina precisión, concentración y habilidad técnica. 
+            Los atletas compiten por la gloria olímpica y demuestran su destreza en el manejo de armas de fuego en un entorno seguro y regulado
+        </p>
+        <center>
+            <img src="tab.jpg"> <br>
+          <button type="button" class="btn btn-dark" onclick="cerrar2();">
+                Cerrar Esto
+            </button>
+        </center>
+</span>
+<span id="Capa3" style="position: absolute; left: 528px; top: 12px; width: 400px; height: 280px; background-color: #33FFFF;
+ layer-background-color: #66FFFF; clip: rect(140 140 140 140); visibility: visible; overflow: auto">
+        <p>
+            Los blancos están divididos en varias secciones, y cada sección tiene un valor asignado. El objetivo es acertar en el centro de la diana para obtener la máxima puntuación.
+        </p>
+        <center>
+            <img src="tiropub.jpg" width="300"> <br>
+            <button type="button" class="btn btn-primary" onclick="cerrar3();">Cerrar publicidad</button>
+</center>
+</span>
+</body></html>
